@@ -1,0 +1,31 @@
+div {
+    font: 12px sans-serif;
+    padding: 3rem 0 10rem 0;
+    /* margin: 20rem; */
+}
+
+select {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+table {
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    width: 60%;
+}
+
+td, th {
+    border: 1px solid black;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+    padding: 0.20rem 0.20rem 0.20rem 0.20rem;
+}

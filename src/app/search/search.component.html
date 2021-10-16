@@ -1,0 +1,21 @@
+<div>
+    <select (change)="setKey($event)">
+        <option *ngFor="let subject of getSubjects(); let i = index;" value="{{subject.key}}" [selected]="isSelected(i)">{{subject.name}}</option>
+    </select>
+    <br />
+    <input type="submit" value="Search" (click)="getBooks()"/>
+    <table *ngIf="getWorks().length">
+        <tr>
+            <th style="width: 60%;">Title</th><th>Author(s)</th>
+        </tr>
+        <tr *ngFor="let work of getWorks()">
+            <td>
+                {{work.title | trim }}
+            </td>
+            <td>
+                {{work.authors | array}}
+            </td>
+        </tr>
+    </table>
+</div>
+

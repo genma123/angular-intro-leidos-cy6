@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div>
+
+    <select (change)="setCategory($event)">
+        <option *ngFor="let category of categories; let i = index;" value="{{category}}" [selected]="isSelected(i)" (change)="setCategory($event)">{{category | titlecase}}</option>
+    </select>
+
+    <app-search [category]="category" (itemsFound)="setItemsFound($event)"></app-search>
+
+    <p *ngIf="itemCount">TOTAL ITEMS FOUND: {{itemCount}}</p>
+</div>
+

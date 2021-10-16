@@ -1,0 +1,10 @@
+div {
+    font: 12px sans-serif;
+    padding: 5rem;
+    /* margin: 20rem; */
+}
+select, p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
